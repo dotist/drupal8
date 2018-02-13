@@ -1,0 +1,29 @@
+uuid: a432b7de-8f6a-4cdf-9727-2a7d481a86f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.exercise
+    - taxonomy.vocabulary.tags
+id: node.exercise.field_tags
+field_name: field_tags
+entity_type: node
+bundle: exercise
+label: Tags
+description: 'E.g.: Cardiovascular, Strength training.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

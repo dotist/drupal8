@@ -1,0 +1,17 @@
+uuid: 22efd45d-5ea8-4c04-a9b6-7acee69c3d5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Workout
+type: workout
+description: 'A workout is a set of exercises and instructions.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

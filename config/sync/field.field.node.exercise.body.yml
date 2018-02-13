@@ -1,0 +1,22 @@
+uuid: 97c217df-5f6a-4339-a9f7-c058924a6b9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.exercise
+  module:
+    - text
+id: node.exercise.body
+field_name: body
+entity_type: node
+bundle: exercise
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

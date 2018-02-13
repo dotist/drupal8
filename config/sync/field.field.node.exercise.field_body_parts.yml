@@ -1,0 +1,29 @@
+uuid: b166a56a-cf41-45b2-ab68-067aed7b1541
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_parts
+    - node.type.exercise
+    - taxonomy.vocabulary.body_parts
+id: node.exercise.field_body_parts
+field_name: field_body_parts
+entity_type: node
+bundle: exercise
+label: 'Target body part'
+description: 'E.g.: Biceps, Lower body, Upper body, Legs, Core, Shoulders.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      body_parts: body_parts
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

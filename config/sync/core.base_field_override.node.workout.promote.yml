@@ -1,0 +1,22 @@
+uuid: 749fd6cf-a6df-457a-a720-d57f3870c19e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.workout
+id: node.workout.promote
+field_name: promote
+entity_type: node
+bundle: workout
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

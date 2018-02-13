@@ -1,0 +1,9 @@
+uuid: 490c96a4-ad37-49ad-ad98-a2877e92baee
+langcode: en
+status: true
+dependencies: {  }
+id: action_set
+label: 'Action set'
+icon_uuid: null
+description: 'An action set references and exercise and gives info on how to do it.'
+behavior_plugins: {  }

@@ -1,0 +1,24 @@
+uuid: 653d337a-c131-4059-bc93-d85cef8a695a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_distance
+    - paragraphs.paragraphs_type.action_set
+  module:
+    - physical
+id: paragraph.action_set.field_distance
+field_name: field_distance
+entity_type: paragraph
+bundle: action_set
+label: Distance
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    number: '5'
+    unit: m
+default_value_callback: ''
+settings: {  }
+field_type: physical_measurement

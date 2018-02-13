@@ -1,0 +1,31 @@
+uuid: 5dae59c3-0dc8-4e72-8572-338b85ded035
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_action_sets
+    - node.type.workout
+    - paragraphs.paragraphs_type.action_set
+  module:
+    - entity_reference_revisions
+id: node.workout.field_action_sets
+field_name: field_action_sets
+entity_type: node
+bundle: workout
+label: Exercises
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      action_set: action_set
+    target_bundles_drag_drop:
+      action_set:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

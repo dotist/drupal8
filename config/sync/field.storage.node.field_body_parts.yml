@@ -1,0 +1,20 @@
+uuid: 38b53cfa-ad0c-4b77-826a-6ac55ba649a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_body_parts
+field_name: field_body_parts
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

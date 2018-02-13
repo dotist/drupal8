@@ -1,0 +1,28 @@
+uuid: 64a8874e-5bab-4675-b935-daecb1e4f5a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_exercise
+    - node.type.exercise
+    - paragraphs.paragraphs_type.action_set
+id: paragraph.action_set.field_exercise
+field_name: field_exercise
+entity_type: paragraph
+bundle: action_set
+label: Exercise
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      exercise: exercise
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

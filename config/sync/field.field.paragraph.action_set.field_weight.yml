@@ -1,0 +1,24 @@
+uuid: 00beb375-5462-4799-a8c4-fd2e5c3b0e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_weight
+    - paragraphs.paragraphs_type.action_set
+  module:
+    - physical
+id: paragraph.action_set.field_weight
+field_name: field_weight
+entity_type: paragraph
+bundle: action_set
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    number: '10'
+    unit: kg
+default_value_callback: ''
+settings: {  }
+field_type: physical_measurement

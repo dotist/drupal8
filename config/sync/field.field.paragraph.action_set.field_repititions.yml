@@ -1,0 +1,25 @@
+uuid: bd697c02-e2c3-4142-a067-16713679a780
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_repititions
+    - paragraphs.paragraphs_type.action_set
+id: paragraph.action_set.field_repititions
+field_name: field_repititions
+entity_type: paragraph
+bundle: action_set
+label: Reps
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 10
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

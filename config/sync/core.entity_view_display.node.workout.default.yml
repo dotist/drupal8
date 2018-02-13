@@ -1,0 +1,48 @@
+uuid: da34669d-1d09-4ac7-8fae-552de5da9e93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.workout.body
+    - field.field.node.workout.field_action_sets
+    - field.field.node.workout.field_weight
+    - node.type.workout
+  module:
+    - entity_reference_revisions
+    - physical
+    - text
+    - user
+id: node.workout.default
+targetEntityType: node
+bundle: workout
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_action_sets:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_weight:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: physical_measurement_default
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

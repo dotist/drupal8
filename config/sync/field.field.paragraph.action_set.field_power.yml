@@ -1,0 +1,25 @@
+uuid: ef553825-7483-4073-bfdc-32fb3d7870ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_power
+    - paragraphs.paragraphs_type.action_set
+id: paragraph.action_set.field_power
+field_name: field_power
+entity_type: paragraph
+bundle: action_set
+label: Power
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0.75
+default_value_callback: ''
+settings:
+  min: 0.01
+  max: !!float 1
+  prefix: ''
+  suffix: '%'
+field_type: decimal

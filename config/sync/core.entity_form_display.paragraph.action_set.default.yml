@@ -1,0 +1,69 @@
+uuid: 811b7eed-5d73-4085-8049-610041f5cab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.action_set.field_distance
+    - field.field.paragraph.action_set.field_duration
+    - field.field.paragraph.action_set.field_exercise
+    - field.field.paragraph.action_set.field_power
+    - field.field.paragraph.action_set.field_repititions
+    - field.field.paragraph.action_set.field_weight
+    - paragraphs.paragraphs_type.action_set
+  module:
+    - physical
+id: paragraph.action_set.default
+targetEntityType: paragraph
+bundle: action_set
+mode: default
+content:
+  field_distance:
+    weight: 1
+    settings:
+      default_unit: ''
+      allow_unit_change: true
+    third_party_settings: {  }
+    type: physical_measurement_default
+    region: content
+  field_duration:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_exercise:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_power:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_repititions:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_weight:
+    weight: 2
+    settings:
+      default_unit: ''
+      allow_unit_change: true
+    third_party_settings: {  }
+    type: physical_measurement_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

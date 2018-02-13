@@ -1,0 +1,9 @@
+uuid: bf67ca59-bc20-47c5-9cf1-076dbef07eee
+langcode: en
+status: true
+dependencies: {  }
+name: 'Body parts'
+vid: body_parts
+description: 'Group exercises by the body part which they target.'
+hierarchy: 0
+weight: 0
