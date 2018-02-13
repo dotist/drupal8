@@ -1,0 +1,8 @@
+name: Practice Custom Fields
+type: module
+description: Custom fields for Practice App
+core: 8.x
+package: Practice
+project: 'practice'
+dependencies:
+  - physical

@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Contains pra_fields.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\pra_fields\ActionSet;
+
+/**
+ * Implements hook_help().
+ */
+function pra_fields_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pra_fields module.
+    case 'help.page.pra_fields':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Entity reference field with units and settings.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function pra_fields_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $ActionSet = new ActionSet();
+  $fields = $ActionSet->ActionSetFields();
+  $t=1;
+}
