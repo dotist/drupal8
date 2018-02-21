@@ -1,0 +1,19 @@
+uuid: d85c5ff9-258d-4b5f-a2b2-d0f6782d15e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - pra_fields
+id: paragraph.field_display_settings
+field_name: field_display_settings
+entity_type: paragraph
+type: action_set_display
+settings: {  }
+module: pra_fields
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

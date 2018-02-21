@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.field.node.workout.body
     - field.field.node.workout.field_action_sets
-    - field.field.node.workout.field_weight
+    - field.field.node.workout.field_display_settings
     - node.type.workout
   module:
     - entity_reference_revisions
-    - physical
+    - pra_fields
     - text
     - user
 id: node.workout.default
@@ -33,12 +33,12 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  field_weight:
-    weight: 1
+  field_display_settings:
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: physical_measurement_default
+    type: action_set_display
     region: content
   links:
     weight: 2

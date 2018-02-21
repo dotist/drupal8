@@ -1,17 +1,16 @@
-uuid: 5d8dcc8a-86a6-465e-83b2-fc7067b196c9
+uuid: 017a9389-0890-411f-8370-a4e30a101346
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - physical
-id: node.field_weight
-field_name: field_weight
+    - pra_fields
+id: node.field_display_settings
+field_name: field_display_settings
 entity_type: node
-type: physical_measurement
-settings:
-  measurement_type: weight
-module: physical
+type: action_set_display
+settings: {  }
+module: pra_fields
 locked: false
 cardinality: 1
 translatable: true

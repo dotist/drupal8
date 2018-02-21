@@ -1,0 +1,28 @@
+uuid: f3df72dd-682a-4538-b655-5c59b2bbcc7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_settings
+    - paragraphs.paragraphs_type.action_set
+  module:
+    - pra_fields
+id: paragraph.action_set.field_display_settings
+field_name: field_display_settings
+entity_type: paragraph
+bundle: action_set
+label: 'Display settings'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    display_settings: 1
+    repititions: 1
+    weight: 1
+    duration: 1
+    distance: 1
+    power: 1
+default_value_callback: ''
+settings: {  }
+field_type: action_set_display

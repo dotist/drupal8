@@ -1,0 +1,27 @@
+uuid: 3469b5d8-6999-4297-8cc9-1708f7693d8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_settings
+    - node.type.workout
+  module:
+    - pra_fields
+id: node.workout.field_display_settings
+field_name: field_display_settings
+entity_type: node
+bundle: workout
+label: 'Display settings'
+description: 'Choose which attributes to display.'
+required: false
+translatable: false
+default_value:
+  -
+    repititions: 1
+    weight: 1
+    duration: 1
+    distance: 1
+    power: 1
+default_value_callback: ''
+settings: {  }
+field_type: action_set_display

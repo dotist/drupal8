@@ -5,12 +5,12 @@ dependencies:
   config:
     - field.field.node.workout.body
     - field.field.node.workout.field_action_sets
-    - field.field.node.workout.field_weight
+    - field.field.node.workout.field_display_settings
     - node.type.workout
   module:
     - paragraphs
     - path
-    - physical
+    - pra_fields
     - text
 id: node.workout.default
 targetEntityType: node
@@ -19,7 +19,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
@@ -28,13 +28,13 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_action_sets:
     type: entity_reference_paragraphs
-    weight: 26
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -44,17 +44,15 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  field_weight:
+  field_display_settings:
     weight: 1
-    settings:
-      default_unit: ''
-      allow_unit_change: true
+    settings: {  }
     third_party_settings: {  }
-    type: physical_measurement_default
+    type: action_set_display
     region: content
   path:
     type: path
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -62,26 +60,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 9
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 2
+    weight: 0
     region: content
     settings:
       size: 60
@@ -89,7 +87,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60

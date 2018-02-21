@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.action_set.field_display_settings
     - field.field.paragraph.action_set.field_distance
     - field.field.paragraph.action_set.field_duration
     - field.field.paragraph.action_set.field_exercise
@@ -12,11 +13,19 @@ dependencies:
     - paragraphs.paragraphs_type.action_set
   module:
     - physical
+    - pra_fields
 id: paragraph.action_set.default
 targetEntityType: paragraph
 bundle: action_set
 mode: default
 content:
+  field_display_settings:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: action_set_display
+    region: content
   field_distance:
     weight: 1
     label: above
