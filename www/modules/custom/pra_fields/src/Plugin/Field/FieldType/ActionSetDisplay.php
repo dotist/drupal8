@@ -25,49 +25,45 @@ use Drupal\pra_fields\ActionSet;
  */
 class ActionSetDisplay extends FieldItemBase {
 
-  protected function fields() {
-    $ActionSet = new ActionSet();
-    return $ActionSet->ActionSetFields();
+  public function fields() {
+    $ActionSet = new ActionSet;
+    return $ActionSet->actionSetFields();
   }
 
   /**
    * {@inheritdoc}
    */
   public static function schema(FieldStorageDefinitionInterface $field_definition) {
-    $array['columns'] = [];
-    foreach ($this->fields() as $field) {
-      $array['columns'][$field] = [
-        'type' => 'int',
-        'unsigned' => FALSE,
-        'size' => 'tiny',
-      ];
-    }
+    return array(
+      'columns' => array(
+        'repititions' => array(
+          'type' => 'int',
+          'unsigned' => FALSE,
+          'size' => 'tiny',
+        ),
+        'weight' => array(
+          'type' => 'int',
+          'unsigned' => FALSE,
+          'size' => 'tiny',
+        ),
+        'duration' => array(
+          'type' => 'int',
+          'unsigned' => FALSE,
+          'size' => 'tiny',
+        ),
+        'distance' => array(
+          'type' => 'int',
+          'unsigned' => FALSE,
+          'size' => 'tiny',
+        ),
+        'power' => array(
+          'type' => 'int',
+          'unsigned' => FALSE,
+          'size' => 'tiny',
+        ),
+      ),
+    );
     return $array;
-    // return array(
-    //   'columns' => array(
-    //     'quantity' => array(
-    //       'type' => 'int',
-    //       'unsigned' => FALSE,
-    //       'size' => 'tiny',
-    //     ),
-    //     'weight' => array(
-    //       'type' => 'int',
-    //       'unsigned' => FALSE,
-    //       'size' => 'tiny',
-    //     ),
-    //     'distance' => array(
-    //       'type' => 'int',
-    //       'unsigned' => FALSE,
-    //       'size' => 'tiny',
-    //     ),
-    //     'duration' => array(
-    //       'type' => 'int',
-    //       'unsigned' => FALSE,
-    //       'size' => 'tiny',
-    //       // 'length' => 1,
-    //     ),
-    //   ),
-    // );
   }
 
   /**
@@ -83,21 +79,21 @@ class ActionSetDisplay extends FieldItemBase {
    * {@inheritdoc}
    */
   public static function propertyDefinitions(FieldStorageDefinitionInterface $field_definition) {
-    foreach($this->fields() as $field) {
-
-    }
-    $properties['quantity'] = DataDefinition::create('integer')
-      ->setLabel(t('Quantity'))
-      ->setDescription(t('Distance display setting.'));
+    $properties['repititions'] = DataDefinition::create('integer')
+      ->setLabel(t('Repititions'))
+      ->setDescription(t('Repititions display setting.'));
     $properties['weight'] = DataDefinition::create('integer')
       ->setLabel(t('Weight'))
       ->setDescription(t('Weight display setting.'));
-    $properties['distance'] = DataDefinition::create('integer')
-      ->setLabel(t('Distance'))
-      ->setDescription(t('Distance display setting.'));
     $properties['duration'] = DataDefinition::create('integer')
       ->setLabel(t('Duration'))
       ->setDescription(t('Duration display setting.'));
+    $properties['distance'] = DataDefinition::create('integer')
+      ->setLabel(t('Distance'))
+      ->setDescription(t('Distance display setting.'));
+    $properties['power'] = DataDefinition::create('integer')
+      ->setLabel(t('Power'))
+      ->setDescription(t('Power display setting.'));
     return $properties;
   }
 

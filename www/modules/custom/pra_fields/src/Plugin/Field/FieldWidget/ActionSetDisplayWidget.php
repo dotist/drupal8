@@ -23,6 +23,7 @@ use Drupal\pra_fields\ActionSet;
  * )
  */
 class ActionSetDisplayWidget extends WidgetBase {
+
   /**
    * {@inheritdoc}
    */
@@ -34,35 +35,24 @@ class ActionSetDisplayWidget extends WidgetBase {
     array &$form,
     FormStateInterface $form_state
   ) {
+    $ActionSet = new ActionSet;
+    $fields = $ActionSet->actionSetFields();
+    foreach ($fields as $field) {
+      $element[$field] = array(
+        '#type' => 'checkbox',
+        '#title' => t(ucfirst($field)),
+        '#default_value' => isset($items[$delta]->{$field}) ? $items[$delta]->{$field} : 1,
+        '#attributes' => [
+          'display-label-value' => [$field],
+          'display-label-control' => ['true'],
+        ],
+      );
+    };
 
-    $ActionSet = new ActionSet();
-    var_dump($ActionSet->ActionSetFields());
-
-    $element['quantity'] = array(
-      '#type' => 'checkbox',
-      '#title' => t('Quantity'),
-      '#default_value' => isset($items[$delta]->quantity) ? $items[$delta]->quantity : 1,
-    );
-    $element['weight'] = array(
-      '#type' => 'checkbox',
-      '#title' => t('Weight'),
-      '#default_value' => isset($items[$delta]->weight) ? $items[$delta]->weight : 1,
-    );
-    $element['distance'] = array(
-      '#type' => 'checkbox',
-      '#title' => t('Distance'),
-      '#default_value' => isset($items[$delta]->distance) ? $items[$delta]->distance : 1,
-    );
-    $element['duration'] = array(
-      '#type' => 'checkbox',
-      '#title' => t('Duration'),
-      '#default_value' => isset($items[$delta]->duration) ? $items[$delta]->duration : 1,
-    );
-    // If cardinality is 1, ensure a label is output for the field by wrapping
-    // it in a details element.
     if ($this->fieldDefinition->getFieldStorageDefinition()->getCardinality() == 1) {
       $element += array(
         '#type' => 'fieldset',
+        '#attributes' => array('display-label-wrapper' => 'true'),
         // '#attributes' => array('class' => array('container-inline')),
       );
     }

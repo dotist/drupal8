@@ -28,7 +28,34 @@ function pra_fields_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_form_alter().
  */
 function pra_fields_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-  $ActionSet = new ActionSet();
-  $fields = $ActionSet->ActionSetFields();
-  $t=1;
+  switch ($form_id) {
+    case 'node_workout_edit_form':
+      // Add pra-fields library.
+      $form['#attached']['library'][] = 'pra_fields/pra-fields';
+    break;
+  }
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function pra_fields_field_widget_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+  // Add custom attributes to the action set fields, so they can be identified by JS.
+  $ActionSet = new ActionSet;
+  $fields = $ActionSet->actionSetFields();
+  // E.g.: 'field_distance' becomes 'distance'.
+  $field_name = str_replace('field_', '', $context['items']->getName());
+  if (in_array($field_name, $fields)) {
+    // Note inconsistent widget structure.
+    $attributes = [
+      'action-set-field' => ['true'],
+      'action-set-field-label' => [$field_name],
+    ];
+    $attributes['action-set-field'] = 'true';
+    if (isset($element['#type']))
+      $element['#attributes'] = $attributes;
+    else if (isset($element['value']))
+      $element['value']['#attributes'] = $attributes;
+  }
+
 }
