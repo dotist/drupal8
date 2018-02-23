@@ -1,0 +1,6 @@
+pra_ui.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width'
+  weight: '1'
+  multipliers:
+    - '1x'

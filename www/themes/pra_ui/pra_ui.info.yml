@@ -1,0 +1,14 @@
+name: pra_ui
+type: theme
+description: 'Practice UI, based on d8base Theme'
+package: pra_ui
+core: 8.x
+libraries:
+  - d8base_ui/global-theme
+
+base theme: d8base_ui
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer
