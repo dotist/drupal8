@@ -1,0 +1,11 @@
+uuid: ec5cb6a5-5121-4fec-950e-ae074f04c26d
+langcode: en
+status: true
+dependencies: {  }
+id: manager
+label: Manager
+weight: -7
+is_admin: null
+permissions:
+  - 'delete any workout content'
+  - 'edit any exercise content'

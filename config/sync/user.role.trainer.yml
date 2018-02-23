@@ -1,0 +1,9 @@
+uuid: 4d1a77b6-daf6-4b59-9880-fd675f054a41
+langcode: en
+status: true
+dependencies: {  }
+id: trainer
+label: Trainer
+weight: -8
+is_admin: null
+permissions: {  }

@@ -6,13 +6,19 @@ _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
 label: 'Authenticated user'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'create exercise content'
+  - 'create workout content'
+  - 'delete own exercise content'
+  - 'delete own workout content'
+  - 'edit own exercise content'
+  - 'edit own workout content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

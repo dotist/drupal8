@@ -1,0 +1,20 @@
+uuid: 49a8cc20-7421-47dd-8170-b54780dc9261
+langcode: en
+status: true
+dependencies:
+  theme:
+    - d8base_ui
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: d8base_ui_page_title
+theme: d8base_ui
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
