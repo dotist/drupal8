@@ -1,0 +1,23 @@
+{
+  "name": "stylus-base",
+  "version": "0.0.1",
+  "description": "Base stylus project",
+  "main": "index.js",
+  "dependencies": {
+    "global": "^4.3.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-stylus": "^2.7.0",
+    "stylus": "^0.54.5",
+    "nib": "^1.1.2",
+    "rupture": "^0.7.1",
+    "lost": "^8.2.0",
+    "livereload": "^0.6.3"
+  },
+  "keywords": [
+    "stylus",
+    "gulp"
+  ],
+  "author": "ibt",
+  "license": "WTFPL"
+}

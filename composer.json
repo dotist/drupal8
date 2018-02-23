@@ -4,7 +4,6 @@
     "require": {
         "brutaldesign/swipebox": "^1.0",
         "cweagans/composer-patches": "^1.6.0",
-        "dotist/d8base_ui": "^1.0",
         "drupal/admin_toolbar": "^1.23",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.4",
@@ -46,18 +45,6 @@
                     "type": "zip"
                 },
                 "type": "drupal-library"
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "dotist/d8base_ui",
-                "version": "1.0",
-                "dist": {
-                    "url": "https://github.com/dotist/d8base_ui/archive/master.zip",
-                    "type": "zip"
-                },
-                "type": "drupal-theme"
             }
         }
     ],
