@@ -5,10 +5,8 @@ www/modules/contrib
 www/modules
 www/sites/default/files
 *.gz
-www/*.php
 www/web.config
 www/*.json
-www/.*
 *.dd
 www/sites/default/settings.php
 www/sites/default/settings.local.php
