@@ -2,7 +2,6 @@
 vendor
 www/core
 www/modules/contrib
-www/modules
 www/sites/default/files
 *.gz
 www/web.config

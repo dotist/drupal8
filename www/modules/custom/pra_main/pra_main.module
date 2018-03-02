@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Contains pra_main.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pra_main_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pra_main module.
+    case 'help.page.pra_main':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom functionality for pra main.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pra_main_theme() {
+  return [
+    'pra_main' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ */
+function pra_main_menu_local_tasks_alter(&$data, $route_name) {
+  switch ($route_name) {
+    case 'entity.user.canonical':
+      // Hide 'View' on user local tasks;
+      // @TODO - not working.
+      $data['tabs'][0]['entity.user.canonical']['#active'] = NULL;
+    break;
+  }
+}

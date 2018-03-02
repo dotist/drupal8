@@ -1,0 +1,5 @@
+name: 'Practice - Main functions'
+type: module
+description: 'Custom functionality for pra main.'
+core: 8.x
+package: 'practice'

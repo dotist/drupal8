@@ -1,0 +1,14 @@
+{
+  "name": "drupal/pra_main",
+  "type": "drupal-module",
+  "description": "Custom functionality for pra main.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/pra_main",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/pra_main",
+    "source": "http://cgit.drupalcode.org/pra_main"
+  },
+  "require": { }
+}

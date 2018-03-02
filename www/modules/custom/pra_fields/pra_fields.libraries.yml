@@ -1,0 +1,9 @@
+pra-fields:
+  version: 1.x
+  css:
+    layout:
+      css/pra-fields.css: {}
+  js:
+    js/pra-fields_forms.js: {}
+  dependencies:
+    - core/jquery
