@@ -1,15 +1,15 @@
-uuid: 2d664fec-a65c-49c9-8da8-b1b160ee6a05
+uuid: 060d0428-49fd-4c62-9179-4a2819eeaff3
 langcode: en
 status: true
 dependencies:
   theme:
-    - d8base_ui
+    - pra_ui
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: d8base_ui_local_tasks
-theme: d8base_ui
+id: pra_ui_local_tasks
+theme: pra_ui
 region: content
-weight: -40
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

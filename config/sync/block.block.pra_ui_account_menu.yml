@@ -1,0 +1,38 @@
+uuid: aba39b8a-43f4-476c-8d3f-9aba2fdbf9f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - block_class
+    - system
+    - user
+  theme:
+    - pra_ui
+third_party_settings:
+  block_class:
+    classes: ''
+_core:
+  default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
+id: pra_ui_account_menu
+theme: pra_ui
+region: header
+weight: -3
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

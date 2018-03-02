@@ -1,0 +1,27 @@
+uuid: 515d5325-bb79-4740-b4a7-a4b300bec235
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - pra_ui
+third_party_settings:
+  block_class:
+    classes: 'block-sitename header-block'
+id: sitename
+theme: pra_ui
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site name'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

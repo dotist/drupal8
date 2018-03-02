@@ -1,17 +1,17 @@
-uuid: caeb3ae9-923d-487d-ba9e-bc0a4fbf2746
+uuid: 4b6787ba-bbd4-47f9-a247-b18e4f10f1a3
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - d8base_ui
+    - pra_ui
 _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: d8base_ui_messages
-theme: d8base_ui
+id: pra_ui_messages
+theme: pra_ui
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:

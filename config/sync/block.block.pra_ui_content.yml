@@ -1,17 +1,17 @@
-uuid: 10063124-3144-49ee-b3aa-a8ed35d063c9
+uuid: 37c35f03-a02a-439e-be67-5e673bbaff40
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - d8base_ui
+    - pra_ui
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: d8base_ui_content
-theme: d8base_ui
+id: pra_ui_content
+theme: pra_ui
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: system_main_block
 settings:

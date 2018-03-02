@@ -1,19 +1,23 @@
-uuid: 402c4cf9-36c5-4d19-9e37-187c8b71a4ec
+uuid: 582945bf-1c32-4c18-aa6b-dbca5593340e
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - system
   theme:
-    - d8base_ui
+    - pra_ui
+third_party_settings:
+  block_class:
+    classes: 'block-main-menu header-block'
 _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: d8base_ui_main_menu
-theme: d8base_ui
-region: content
-weight: 0
+id: pra_ui_main_menu
+theme: pra_ui
+region: header
+weight: -4
 provider: null
 plugin: 'system_menu_block:main'
 settings:

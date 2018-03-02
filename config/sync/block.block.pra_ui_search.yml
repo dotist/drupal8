@@ -1,17 +1,17 @@
-uuid: 52aaa812-82cc-4467-95fb-b52478b0a8ba
+uuid: 1c5c56e8-da7b-4253-a2b3-a89eecc1eb28
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search
   theme:
-    - d8base_ui
+    - pra_ui
 _core:
   default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
-id: d8base_ui_search
-theme: d8base_ui
-region: content
-weight: -1
+id: pra_ui_search
+theme: pra_ui
+region: header
+weight: -2
 provider: null
 plugin: search_form_block
 settings:

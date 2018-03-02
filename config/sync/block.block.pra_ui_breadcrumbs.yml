@@ -1,17 +1,17 @@
-uuid: 1a6792e1-a14d-42d7-8858-cd1e1670fd75
+uuid: 5410d6f4-9fdf-4034-9a96-5e2f5e928163
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
-    - d8base_ui
+    - pra_ui
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: d8base_ui_breadcrumbs
-theme: d8base_ui
-region: content
-weight: 0
+id: pra_ui_breadcrumbs
+theme: pra_ui
+region: header
+weight: -1
 provider: null
 plugin: system_breadcrumb_block
 settings:

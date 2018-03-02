@@ -1,15 +1,15 @@
-uuid: 5ba1cfbf-9c0f-4e35-9aa4-45aa2814c787
+uuid: 97c34ad7-8707-4ebe-8fc2-8d3892ae7ff0
 langcode: en
 status: true
 dependencies:
   theme:
-    - d8base_ui
+    - pra_ui
 _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: d8base_ui_local_actions
-theme: d8base_ui
+id: pra_ui_local_actions
+theme: pra_ui
 region: content
-weight: -20
+weight: -2
 provider: null
 plugin: local_actions_block
 settings:

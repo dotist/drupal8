@@ -1,4 +1,4 @@
-uuid: a1a61fea-96ab-456f-846c-07ba28f66718
+uuid: c3ced8b6-fdfb-43f4-bf76-422151ddba9d
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - d8base_ui
+    - pra_ui
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: d8base_ui_footer
-theme: d8base_ui
-region: content
-weight: 0
+id: pra_ui_footer
+theme: pra_ui
+region: footer
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

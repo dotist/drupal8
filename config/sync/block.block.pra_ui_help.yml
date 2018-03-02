@@ -1,17 +1,17 @@
-uuid: 3d1121bd-79c8-4fb9-a12f-c3ab602a286f
+uuid: 05663fe2-8a32-4b90-9e62-35b1e50fe480
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - d8base_ui
+    - pra_ui
 _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
-id: d8base_ui_help
-theme: d8base_ui
+id: pra_ui_help
+theme: pra_ui
 region: content
-weight: -30
+weight: -3
 provider: null
 plugin: help_block
 settings:
