@@ -12,3 +12,6 @@ www/sites/default/settings.php
 www/sites/default/settings.local.php
 www/libraries
 www/themes/contrib
+www/.csslintrc
+www/.eslintignore
+www/.editorconfig
